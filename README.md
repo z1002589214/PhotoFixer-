@@ -87,27 +87,6 @@ PhotoFixer.exe "路径"
 
 <img width="938" height="4176" alt="deepseek_mermaid_20260620_348b25" src="https://github.com/user-attachments/assets/33acccfc-b8d3-4912-baa2-11f3978033cd" />
 
-
----
-
-### 🛠️ 从源码打包
-如果你需要自行打包 .exe 文件：
-
-环境要求
-Python 3.6+
-
-PyInstaller
-
-exiftool.exe
-
-打包步骤
-# 1. 安装 PyInstaller
-pip install pyinstaller
-
-# 2. 执行打包
-pyinstaller --onefile --console --name="PhotoFixer" photo_fixer_multithread.py
-
-# 3. 打包完成后，将 exiftool.exe 复制到 dist 目录
 # 4. dist/PhotoFixer.exe 即为可执行文件
 
 
