@@ -87,6 +87,3 @@ PhotoFixer.exe "路径"
 
 <img width="938" height="4176" alt="deepseek_mermaid_20260620_348b25" src="https://github.com/user-attachments/assets/33acccfc-b8d3-4912-baa2-11f3978033cd" />
 
-# 4. dist/PhotoFixer.exe 即为可执行文件
-
-
