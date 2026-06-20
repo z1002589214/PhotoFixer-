@@ -48,3 +48,66 @@ PhotoFixer 是一款用于**批量修复照片和视频元数据**的 Windows �
 | `video_20190519_064521.mp4` | 2019-05-19 06:45:21 |
 
 ---
+
+## 🚀 快速开始
+
+### 下载与安装
+
+1. 下载 [最新版本](https://github.com/yourname/PhotoFixer/releases) 的 `PhotoFixer.zip`
+2. 解压到任意文件夹
+3. 确保文件夹结构如下：
+PhotoFixer/
+├── PhotoFixer.exe ← 主程序
+├── exiftool.exe ← 核心处理工具（必须）
+└── 使用说明.txt ← 使用说明
+
+### 使用方法
+
+#### 方式一：双击运行（推荐）
+
+1. 双击 `PhotoFixer.exe`
+2. 按提示输入文件夹路径（**支持拖拽**）
+3. 设置时间范围（如 `2015` ~ `2026`）
+4. 选择是否使用创建日期作为备选
+5. 查看预览清单，确认后输入 `y` 开始处理
+6. 等待完成
+
+#### 方式二：拖拽文件夹到 exe 图标
+
+直接将照片文件夹拖拽到 `PhotoFixer.exe` 图标上，松开鼠标即可。
+
+#### 方式三：命令行运行
+
+PhotoFixer.exe "路径"
+例如：PhotoFixer.exe "D:\RJCC\百度网盘\2"
+
+---
+
+### 📋 运行流程/n
+
+<img width="938" height="4176" alt="deepseek_mermaid_20260620_348b25" src="https://github.com/user-attachments/assets/33acccfc-b8d3-4912-baa2-11f3978033cd" />
+
+
+---
+
+### 🛠️ 从源码打包
+如果你需要自行打包 .exe 文件：
+
+环境要求
+Python 3.6+
+
+PyInstaller
+
+exiftool.exe
+
+打包步骤
+# 1. 安装 PyInstaller
+pip install pyinstaller
+
+# 2. 执行打包
+pyinstaller --onefile --console --name="PhotoFixer" photo_fixer_multithread.py
+
+# 3. 打包完成后，将 exiftool.exe 复制到 dist 目录
+# 4. dist/PhotoFixer.exe 即为可执行文件
+
+
